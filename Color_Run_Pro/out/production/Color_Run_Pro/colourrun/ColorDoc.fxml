@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="550.0" maxWidth="980.0" minHeight="550.0" minWidth="980.0" prefHeight="550.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colourrun.ColorDocController">
+     <children>
+      <ImageView accessibleRole="BUTTON" fitHeight="643.0" fitWidth="1015.0" layoutX="-11.0" layoutY="-16.0" onDragDetected="#buttonclicked" onMouseClicked="#soundclicked" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-77.0" AnchorPane.leftAnchor="-11.0" AnchorPane.rightAnchor="-24.0" AnchorPane.topAnchor="-16.0">
+         <image>
+            <Image url="@../images/color%20ball.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <VBox layoutX="125.0" layoutY="109.0" prefHeight="332.0" prefWidth="164.0">
+         <children>
+            <Region prefHeight="22.0" prefWidth="206.0" />
+            <JFXButton id="newgame" fx:id="newGameButton" onAction="#buttonclicked" prefHeight="26.0" prefWidth="164.0" text="New Game" textFill="WHITE" />
+            <Region prefHeight="24.0" prefWidth="206.0" />
+            <JFXButton onAction="#highscoreclicked" prefHeight="19.0" prefWidth="164.0" text="High Score" textFill="WHITE" />
+            <Region prefHeight="0.0" prefWidth="164.0" />
+            <Region prefHeight="34.0" prefWidth="164.0" />
+            <MenuButton alignment="CENTER" mnemonicParsing="false" popupSide="RIGHT" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #1D316C;" text="Game Mode" textAlignment="CENTER" textFill="WHITE">
+              <items>
+                <MenuItem id="challenge1" mnemonicParsing="false" onAction="#menuclicked1" style="-fx-backgound-color: #1D316C;" text="Easy" />
+                <MenuItem mnemonicParsing="false" onAction="#menuclicked2" text="Medium" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuclicked3" text="Hard" />
+              </items>
+            </MenuButton>
+            <Region prefHeight="1.0" prefWidth="164.0" />
+            <Region prefHeight="25.0" prefWidth="164.0" />
+            <JFXButton onAction="#howtoplayclicked" prefHeight="26.0" prefWidth="164.0" text="How To Play" textFill="WHITE" />
+            <Region prefHeight="26.0" prefWidth="164.0" />
+            <JFXButton onAction="#quitclicked" prefHeight="36.0" prefWidth="164.0" text="Exit" textFill="WHITE" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="559.0" layoutY="73.0" prefHeight="117.0" prefWidth="380.0" text="COLOR RUN" textAlignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Black" size="48.0" />
+         </font>
+         <effect>
+            <Blend mode="BLUE" opacity="0.0" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.46116504854368945" startX="1.0" startY="0.07766990291262135">
+               <stops>
+                  <Stop color="#569762" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <ImageView fx:id="cross1" fitHeight="54.0" fitWidth="98.0" layoutX="771.0" layoutY="414.0" onMouseClicked="#soundclicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@maxresdefault.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="cross" fx:id="cross" fitHeight="31.0" fitWidth="31.0" layoutX="838.0" layoutY="453.0" onMouseClicked="#soundclicked" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cross.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

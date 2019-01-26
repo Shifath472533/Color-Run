@@ -1,0 +1,47 @@
+/*.root{
+    -fx-background-image: url(../images/color ball.jpg);
+}*/
+
+.button{
+    -fx-background-color:#1D316C; -fx-text-fill: #FFFFFF;
+}
+/*.label{
+    -fx-font: 6pt;
+}*/
+.menu-item {
+/* -fx-skin: "com.sun.javafx.scene.control.skin.MenuItemSkin";*/
+-fx-background-color: transparent;
+-fx-text-fill: #1D316C;
+-fx-padding: 0.333333em 0.41777em 0.333333em 0.41777em; /* 4 5 4 5 */
+}
+
+.menu-item .left-container {
+-fx-padding: 0.458em 0.791em 0.458em 0.458em;
+}
+
+.menu-item .graphic-container {
+-fx-padding: 0em 0.333em 0em 0em;
+}
+.menu-item .label {
+/* -fx-padding: 0em 0.5em 0em 0em;
+-fx-text-fill: -fx-text-base-color;
+*/
+-fx-text-fill: #1D316C;
+-fx-background-color: #FFFFFF;
+
+}
+/*.menu-item:disabled .label {
+-fx-opacity: -fx-disabled-opacity;
+}
+*/
+.menu-item:focused {
+-fx-background: #1D316C;
+-fx-background-color: #1D316C;
+-fx-text-fill: white;
+}
+
+.menu-item:focused .label {
+-fx-text-fill: white;
+-fx-background-color:#1D316C;
+
+}
